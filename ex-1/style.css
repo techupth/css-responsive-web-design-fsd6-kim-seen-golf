@@ -1,1 +1,120 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+:root {
+  --main: coral;
+  --text: rgb(50, 50, 50);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#title {
+  position: relative;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  z-index: 1;
+}
+
+#bg-color {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: var(--main);
+  left: 1px;
+  top: 55px;
+  z-index: 0;
+  background-color: rgb(255, 127, 80, 0.8);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-item {
+  padding: 20px;
+  border: 2px transparent black;
+  width: 200px;
+  color: var(--text);
+}
+
+.logo {
+  margin-bottom: 20px;
+  background-color: var(--main);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.arrow {
+  margin-top: 80px;
+}
+
+#container-1,
+#container-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#card-8 {
+  background-color: var(--main);
+  color: antiquewhite;
+  border-radius: 5px;
+}
+
+#group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+span {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    justify-content: unset;
+  }
+
+  #container-1,
+  #container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+
+  .arrow {
+    position: relative;
+    margin-top: 0px;
+    left: 100px;
+    bottom: 40px;
+  }
+
+  #title,
+  #card-8 {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+}
